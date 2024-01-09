@@ -45,8 +45,9 @@ public class CategoryEntity {
 	@JoinColumn(name = "parent_id")
 	private CategoryEntity parent; //부모
 	
+	
 	@OneToMany(mappedBy = "parent")
-	private List<CategoryEntity> child = new ArrayList<>(); //자식
+	private List<CategoryEntity> child;
 	
 	//편의메서드
 	public CateListDTO toListDTO() {
