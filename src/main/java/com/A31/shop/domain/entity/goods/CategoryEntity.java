@@ -31,6 +31,7 @@ import lombok.ToString;
 @Entity
 public class CategoryEntity {
 	
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "category_id")
